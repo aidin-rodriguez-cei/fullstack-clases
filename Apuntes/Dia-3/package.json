@@ -1,0 +1,19 @@
+{
+  "name": "mi-primer-proyecto",
+  "version": "1.0.0",
+  "description": "Estoy haciendo una prueba",
+  "main": "mi-script.js",
+  "scripts": {
+    "start": "node mi-script.js",
+    "dev": "nodemon mi-script.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aidin",
+  "license": "ISC",
+  "dependencies": {
+    "cowsay": "^1.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
