@@ -104,6 +104,7 @@ Podemos crear nuestros propios scripts, como por ej: `start, dev, test, etc`
   "scripts": {
     "start": "node mi-script.js",
     "dev": "nodemon mi-script.js",
+    "build": "crer una versión final para subir al servidor",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
 }
