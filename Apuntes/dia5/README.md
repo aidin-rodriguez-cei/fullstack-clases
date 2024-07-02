@@ -114,3 +114,21 @@ En el frontEnd tenemos que cambiar nuestras etiquetas de scripts
 ```html
 <script type="module" src="./js/mi-script.js">
 ```
+
+
+# React con Vite
+
+React es una biblioteca de JS para construir interfaces de usuarios (facebook 2013)
+
+https://vitejs.dev/
+
+Instrucciones para crear un proyecto:
+
+```bash
+npm create vite@latest
+#elegimos nombde de carpeta y otras opciones
+#elegimos libreria "react"
+cd nombre-proyecto
+npm i
+npm run dev
+```
