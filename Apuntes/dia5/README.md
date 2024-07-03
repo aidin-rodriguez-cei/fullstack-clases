@@ -62,6 +62,7 @@ const nombre= "Juanito"
 // incluyendo renombrar la variable "nombre" por "miNombre" ya que la estaba usando de antes. 
 const {edad, nombre:miNombre, asignatura} = props;
 
+// Template string
 console.log(`Mi nombre es ${miNombre}, tengo ${edad} años, y estoy en la materia de ${asignatura}`)
 
 }
@@ -86,7 +87,7 @@ export default mensaje1; //exports default, no usa llaves en el import
 // archivo2.js
 import mensaje1 from "./archivo1"; //import de default va sin llaves {}
 
-import miMensaje from "./archivo1"; //import mensaje1 renombrando a miMensaje 
+import miMensaje from "./archivo1"; //import mensaje1 renombrando a miMensaje porque es Default
 import {mensaje2, mensaje3} from "./archivo1";
 
 console.log(mensaje1, miMensaje, mensaje1, mensaje3)
@@ -118,7 +119,7 @@ En el frontEnd tenemos que cambiar nuestras etiquetas de scripts
 
 # React con Vite
 
-React es una biblioteca de JS para construir interfaces de usuarios (facebook 2013)
+React es una librería de JS para construir interfaces de usuarios (facebook 2013)
 
 https://vitejs.dev/
 
@@ -126,9 +127,14 @@ Instrucciones para crear un proyecto:
 
 ```bash
 npm create vite@latest
-#elegimos nombde de carpeta y otras opciones
-#elegimos libreria "react"
+#elegimos nombre de carpeta y otras opciones
+#elegimos libreria "react" y "javaScript"
 cd nombre-proyecto
 npm i
 npm run dev
+
+# Command+c para salir
 ```
+
+
+
