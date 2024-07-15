@@ -6,19 +6,20 @@ const FormularioMultiple = () => {
     const [formData, setFormData] = useState({
     })
 
-    const handleSubmit = () =>{
+    const handleSubmit = (e) =>{
+        e.preventDefault()
         console.log("Enviando Formulario")
     }
 
     const pasoAnterior = () =>{
         console.log("Anterior")
-        setPaso((pasoActual) => Math.max(paso -1,1));
+        setPaso(() => Math.max(paso -1,1));
     }
 
     const pasoSiguiente = () =>{
         console.log("Siguiente")
         // incrementa el paso, pero nunca se pasa de 3 pasos
-        setPaso((pasoActual) => Math.min(paso +1,3));
+        setPaso(() => Math.min(paso +1,3));
     }
 
     const renderizarPasos= () => {
@@ -37,10 +38,13 @@ const FormularioMultiple = () => {
             {renderizarPasos()}
 
             {/* los botones */}
+           {paso > 1 && (
             <button onClick={pasoAnterior}>Anterior</button>
+        )}
+        {paso < 4 && (
             <button onClick={pasoSiguiente}>Siguiente</button>
+        )}
             <button type="submit">Enviar</button>
-
         </form>
         </>
     )
@@ -57,7 +61,7 @@ const Paso1 = ({data, setData}) => (
     </div>
 )
 
-const Paso2 = () => (
+const Paso2 = ({data, setData}) => (
     <div>
         <h3>Página 2</h3>
         <input type="text" 
@@ -68,7 +72,7 @@ const Paso2 = () => (
     </div>
 )
 
-const Paso3 = () => (
+const Paso3 = ({data, setData}) => (
     <div>Paso1</div>
 )
 

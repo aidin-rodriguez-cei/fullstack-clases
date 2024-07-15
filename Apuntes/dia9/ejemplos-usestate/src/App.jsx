@@ -2,6 +2,8 @@ import './App.css'
 import { Formulario } from './components/Formulario'
 import {LoginForm} from './components/LoginForm'
 import FormularioMultiple  from './components/FormularioMultiple'
+import Galeria from './components/Galeria'
+import TestEffect from './components/TestEffect'
 
 function App() {
 
@@ -26,6 +28,19 @@ function App() {
     <div className='Card'>
     <h1>Formulario de múltiples páginas</h1>
       <FormularioMultiple/>
+    </div>
+
+    <br />
+    <br />
+
+    <div className='Card'>
+    <h1>Galería de imágenes</h1>
+      <Galeria/>
+    </div>
+
+    <div className='Card'>
+    <h1>Galería de imágenes</h1>
+      <TestEffect/>
     </div>
 
     </>
