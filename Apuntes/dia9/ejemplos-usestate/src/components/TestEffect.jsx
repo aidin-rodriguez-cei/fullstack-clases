@@ -33,7 +33,7 @@ const TestEffect = () => {
         console.log("Quite el componente CONT")}
     }, [cont, otraVariable]);
 
-
+// ciclo de vida 3 (opcional)
 // 3. Cuando se quita/desaparece/desmonta/descarga/me lo cargo... "ComponentWillUnmount"
     
    

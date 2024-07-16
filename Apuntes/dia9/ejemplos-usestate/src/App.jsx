@@ -4,11 +4,26 @@ import {LoginForm} from './components/LoginForm'
 import FormularioMultiple  from './components/FormularioMultiple'
 import Galeria from './components/Galeria'
 import TestEffect from './components/TestEffect'
+import PruebasDeUseEffect from './components/PruebasDeUseEffect'
+import Timer from './components/Timer'
 
 function App() {
 
   return (
     <>
+        <div className='Card'>
+    <h1>Soy Timer</h1>
+      <Timer/>
+    </div>
+
+    <div className='Card'>
+    <h1>Pruebas de useEffect</h1>
+      <PruebasDeUseEffect/>
+    </div>
+
+    <br />
+    <br />
+
     <div className='Card'>
     <h1>Ejemplos con useState</h1>
       <Formulario/>
