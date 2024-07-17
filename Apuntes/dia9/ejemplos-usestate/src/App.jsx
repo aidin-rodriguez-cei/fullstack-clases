@@ -6,12 +6,19 @@ import Galeria from './components/Galeria'
 import TestEffect from './components/TestEffect'
 import PruebasDeUseEffect from './components/PruebasDeUseEffect'
 import Timer from './components/Timer'
+import FetchDataComp from './components/FetchDataComp'
 
 function App() {
 
   return (
     <>
-        <div className='Card'>
+    
+    <div className='Card'>
+    <h1>Soy un Fetch</h1>
+      <FetchDataComp/>
+    </div>
+
+    <div className='Card'>
     <h1>Soy Timer</h1>
       <Timer/>
     </div>
@@ -54,7 +61,7 @@ function App() {
     </div>
 
     <div className='Card'>
-    <h1>Galería de imágenes</h1>
+    <h1>Test Effect</h1>
       <TestEffect/>
     </div>
 

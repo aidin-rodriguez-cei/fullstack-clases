@@ -57,3 +57,7 @@
   button {
     margin: 15px;
   }
+
+  .fetch {
+    text-align: start;
+  }
