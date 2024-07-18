@@ -25,13 +25,13 @@ export const FetchDataComp = () => {
 
     const getDataUsandoThen = () =>{
         fetch("https://jsonplaceholder.typicode.com/posts")
-    // .then ((respuesta) => {
-    //     console.log(respuesta);
-    //     const datos = respuesta.json();
-    //     return datos;
+    // .then ((stringJson) => {
+    //     console.log(stringJson);
+    //     const objetoJson = stringJson.json();
+    //     return objetoJson;
     // })
-    .then ( respuesta => respuesta.json())
-    .then ( json => setData(json))
+    .then ( stringJson => stringJson.json())
+    .then ( objetoJson => setData(objetoJson))
     .catch ( error => {
         console.log("Tuvimos un error: ", error)
     });
