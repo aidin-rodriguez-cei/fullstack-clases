@@ -1,0 +1,271 @@
+/* Estilo para el header */
+.header {
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Estilo para la navegación dentro del header */
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #555;
+}
+
+/* Estilo para centrar el contenido principal de las páginas */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 60px; /* Asegura que el contenido no esté oculto detrás del header */
+    box-sizing: border-box;
+}
+
+/* Estilo específico para el contenido de cada página */
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: auto;
+}
+
+/* Wrapper para los posts */
+.posts-wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Grid de los posts */
+.post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilo de las tarjetas de posts */
+.card {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}
+
+/* Ajuste de tamaño del texto en las tarjetas */
+.card h4 {
+    margin-bottom: 10px;
+}
+
+/* Estilos para los botones de visibilidad y paginación */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #00b3aa;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8ee8df;
+}
+
+/* Estilos para la paginación */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+/* Estilos para la sección de comentarios */
+.comment-section {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    margin: auto;
+}
+
+.comment-section h4 {
+    margin-bottom: 10px;
+}
+
+.comment-section textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.comment-section button {
+    display: block;
+    margin-top: 10px;
+    background-color: #00b3aa;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.comment-section button:hover {
+    background-color: #8ee8df;
+}
+
+.comments-list {
+    margin-top: 10px;
+}
+
+.comments-list p {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* Estilos adicionales para el contenido de Home */
+.home-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #00b3aa;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #8ee8df;
+}
+
+/* Añadir estilos adicionales que se hayan perdido */
+/* Si tenías estilos adicionales en otros archivos, agrégalos aquí */
+/* Ejemplo de estilos adicionales */
+.example-class {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.another-class {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+/* Restablecer algunos estilos que se hayan perdido */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+a {
+    color: #00b3aa;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .post-container {
+        width: 100%;
+    }
+
+    .pagination {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pagination button {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+    }
+
+    .comment-section textarea {
+        height: 80px;
+    }
+}

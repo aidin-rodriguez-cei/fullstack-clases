@@ -1,5 +1,19 @@
-import { Outlet, Link, NavLink } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
+import "./css/Posts.css"
+const Layout = () => {
+    return (
+        <>
+            <header className="header">
+                <nav className="nav">
+                    <NavLink to="/" className="nav-link">Home</NavLink>
+                    <NavLink to="/posts" className="nav-link">Posts</NavLink>
+                </nav>
+            </header>
+            <main className="main-content">
+                <Outlet />
+            </main>
+        </>
+    );
+};
 
-const Layaout = () => {
-    
-}
+export default Layout;
