@@ -1,4 +1,17 @@
 /* Estilo para el header */
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+}
+
 .header {
     background-color: #333;
     padding: 10px 0;
@@ -36,9 +49,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding-top: 60px; /* Asegura que el contenido no esté oculto detrás del header */
+    height: calc(100vh - 60px);
+    padding-top: 60px;
     box-sizing: border-box;
+    flex-direction: column;
 }
 
 /* Estilo específico para el contenido de cada página */
@@ -59,6 +73,9 @@
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
 }
 
 /* Grid de los posts */
@@ -66,6 +83,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
@@ -79,6 +97,7 @@
     width: 100%;
     max-width: 600px;
     text-align: left;
+    margin: 0 auto;
 }
 
 /* Ajuste de tamaño del texto en las tarjetas */
@@ -137,6 +156,7 @@ button:hover {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ddd;
+    background-color: #f4f4f4;
 }
 
 .comment-section button {
@@ -168,6 +188,7 @@ button:hover {
 .home-content h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #00b3aa;
 }
 
 .home-content p {
@@ -216,6 +237,11 @@ body {
 h3 {
     font-size: 24px;
     margin-bottom: 20px;
+    color: #00b3aa;
+}
+
+h4 {
+    color: #00b3aa;
 }
 
 p {

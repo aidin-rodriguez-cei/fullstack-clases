@@ -11,8 +11,10 @@ import {publicaciones, comments} from './data/mockData.js';
 
 import { getLastId } from './utils/utils.js'; 
 
+// importar variables de configuracións
+import {PORT, URL} from './config/config.js'
+
 const app = express();
-const PORT = 3000;
 
 // CORS Nos permite acceder a los recursos de este servidor, desde otro servidor. 
 app.use(cors());
@@ -33,7 +35,16 @@ app.use(express.json())
 app.get("/", (req, res)=>{
     res.setHeader("Content-Type", "text/html");
 
-    const landingHTML=`<h1>Bienvenidos a nuestra REST-API</h1>`;
+    const landingHTML=
+    `<h1>Bienvenidos a nuestra REST-API</h1>
+    Mi backend es: <strong>${URL}:${PORT}/publicaciones
+    
+    <ul>
+    <li> GET <a target="_blank" href="${URL}:${PORT}" </li>
+    <li> Get </li>
+    </ul>
+    
+    `;
 
     res.send(landingHTML)
 });
@@ -104,5 +115,5 @@ app.post("/comments",  (req, res) => {
 
 
 app.listen(PORT, ()=> {
-    console.log(`Servidor iniciado en http://localhost:${PORT}`);
+    console.log(`Servidor iniciado en ${URL}:${PORT}`);
 });
